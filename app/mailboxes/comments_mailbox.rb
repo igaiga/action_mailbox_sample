@@ -2,7 +2,7 @@ class CommentsMailbox < ApplicationMailbox
   before_processing :validate_request #((1))
 
   def process #((2))
-    board.comments.create!(body: mail.decode, creator: commenter)
+    board.comments.create!(body: mail.decoded, creator: commenter)
   end
 
   # リクエストのバリデーション
