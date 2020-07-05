@@ -2,10 +2,10 @@
 
 one:
   body: MyString
-  user: one
+  creator: one
   board: one
 
 two:
   body: MyString
-  user: two
+  creator: two
   board: two
